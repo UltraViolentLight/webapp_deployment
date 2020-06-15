@@ -10,6 +10,7 @@
 
 - [Intruduction](#intruduction)
 - [Requirements](#requirements)
+- [Achitecture](#achitecture)
 - [Example](#example)
 - [Installation](#installation)
 - [Credits](#credits)
@@ -40,8 +41,6 @@ The application needs to be deployed into private subnets with a Load Balancer l
 
 One of the output exports of the CloudFormation script should be the public URL of the LoadBalancer.
 
-Bonus points if you add http:// in front of the load balancer DNS Name in the output, for convenience.
-
 ---
 
 ## Achitecture
@@ -50,7 +49,7 @@ Bonus points if you add http:// in front of the load balancer DNS Name in the ou
 
 ---
 
-## Deployment Example
+## Example
 
 ```shell
 $ ./scripts/create.sh <STACKNAME> infrastructure.yml parameter/parameter.json
@@ -67,7 +66,7 @@ $ ./scripts/create.sh <STACKNAME> infrastructure.yml parameter/parameter.json
 ### Setup
 > Setup and configure your own AWS subscription in order to deploy the infrastrcuture yourself.
 
-> Setup and configure AWS CLI to run the aws command
+> Setup and configure AWS CLI to run the aws command as shown here [tracking](https://aws.amazon.com/de/cli/).
 
 ---
 
