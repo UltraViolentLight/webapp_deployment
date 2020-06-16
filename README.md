@@ -13,6 +13,7 @@
 - [Achitecture](#achitecture)
 - [Example](#example)
 - [Installation](#installation)
+- [WebAppUrl](#webapprl)
 - [Credits](#credits)
 
 ## Intruduction
@@ -52,7 +53,8 @@ One of the output exports of the CloudFormation script should be the public URL 
 ## Example
 
 ```shell
-$ ./scripts/create.sh <STACKNAME> infrastructure.yml parameter/parameter.json
+$ chmod +x scripts/create.sh 
+$ ./scripts/create.sh <STACKNAME> network.yml parameter/network-parameters.json
 ```
 
 ---
@@ -66,7 +68,15 @@ $ ./scripts/create.sh <STACKNAME> infrastructure.yml parameter/parameter.json
 ### Setup
 > Setup and configure your own AWS subscription in order to deploy the infrastrcuture yourself.
 
-> Setup and configure AWS CLI to run the aws command as shown here [tracking](https://aws.amazon.com/de/cli/).
+> Setup and configure AWS CLI to run the aws command as shown [here](https://aws.amazon.com/de/cli/).
+
+---
+
+## WebAppUrl
+
+- The Udagram WebApp can be reached under the following URL (port 80):
+
+- [http://udagr-WebAp-1QVDEHJFL50LQ-451831188.us-west-2.elb.amazonaws.com](http://udagr-WebAp-1QVDEHJFL50LQ-451831188.us-west-2.elb.amazonaws.com)
 
 ---
 
